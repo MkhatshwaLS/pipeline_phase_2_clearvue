@@ -1,0 +1,19 @@
+{
+  "name": "pipeline_phase_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ingest_excel_to_mongodb_locally.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.2.0",
+    "dotenv": "^17.2.2",
+    "kafkajs": "^2.2.4",
+    "mongoose": "^8.18.0",
+    "xlsx": "^0.18.5"
+  }
+}
