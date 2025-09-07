@@ -55,5 +55,5 @@ async function importExcelFiles(folderPath) {
 // Change this path to your folder
 //make sure the excel files are in your project root directory
 const folderPath =
-  "C:Users\\Givenchie\\Desktop\\NWU 2025\\SEMESTER 2\\ADV DATABASES-CMPG321\\ProjectClearVueBIProj\\exceldata";
+  "exceldata";
 importExcelFiles(folderPath);
