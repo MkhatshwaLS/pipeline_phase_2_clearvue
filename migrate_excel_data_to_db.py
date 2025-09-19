@@ -6,7 +6,7 @@ def import_excel_files(folder_path):
     try:
         # Connect to local MongoDB
         client = MongoClient("mongodb://localhost:27017/")
-        db = client["clearvue"]  # database name
+        db = client["clearvue"]  
 
         # List all files in the folder
         for file in os.listdir(folder_path):
@@ -25,12 +25,12 @@ def import_excel_files(folder_path):
                     data = df.to_dict(orient="records")
                     collection.insert_many(data)
 
-                    print(f"✅ Imported {len(data)} records into '{collection_name}' collection")
+                    print(f" Imported {len(data)} records into '{collection_name}' collection")
 
-        print("🎉 All Excel files imported successfully!")
+        print("All Excel files imported successfully!")
 
     except Exception as e:
-        print("❌ Error importing files:", e)
+        print("Error importing files:", e)
 
 
 if __name__ == "__main__":
